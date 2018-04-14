@@ -18,7 +18,7 @@ export default {
   name: 'Deck',
   components: { Card, ImageModal },
   props: {
-    cardList: { type: Array, default: [] }
+    cardList: { type: Array, default: () => [] }
   }
 };
 </script>
