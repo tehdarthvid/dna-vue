@@ -1,8 +1,13 @@
 {
   "root": true,
   "extends": ["plugin:vue/essential", "@vue/airbnb", "eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
   "rules": {
     "yoda": [2, "always"],
-    "comma-dangle": ["error", "never"]
+    "comma-dangle": ["warn", "never"],
+    "no-console": "off",
+    "no-unused-vars": "warn"
   }
 }
