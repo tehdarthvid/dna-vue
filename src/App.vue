@@ -1,6 +1,12 @@
 <template>
   <div id="app">
-    <div id="version">{{versionString}}</div>
+    <div id="version">
+      <a
+        href="https://github.com/tehdarthvid/dna-vue/releases"
+        target="_blank">
+        {{versionString}}
+      </a>
+    </div>
     <div id="title">
       <h1>darthvid's influences DNA</h1>
       <p>[also the target for webdev study]</p>
@@ -86,5 +92,10 @@ p + p {
   left: 0;
   position: absolute;
   text-align: right;
+
+  a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
 }
 </style>
