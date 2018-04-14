@@ -1,11 +1,14 @@
 <template>
   <div id="app">
     <div id="version">{{versionString}}</div>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="title">
+      <h1>darthvid's influences DNA</h1>
+      <p>[also the target for webdev study]</p>
     </div>
-    <router-view/>
+    <div id="content">
+      <router-view/>
+    </div>
+    <p>[currently using Vue.js (3.x beta) / Vuex]</p>
   </div>
 </template>
 
@@ -33,6 +36,37 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
+body {
+  margin: 40px 0;
+  font-family: 'Raleway';
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #bcaaa4;
+  -webkit-font-smoothing: antialiased;
+}
+
+.title {
+  font-family: 'Raleway';
+  font-size: 24px;
+  font-weight: 700;
+  color: #5d4037;
+  text-align: center;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+h1 + p,
+p + p {
+  margin-top: 10px;
+}
+* {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+}
+
 #nav {
   padding: 30px;
   a {

@@ -1,14 +1,19 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
-import About from './views/About.vue';
+
+import Home from './views/Home';
+import About from './views/About';
+
+import Deck from '@/views/Deck';
+
+import testCardList from '@/constants/testCardList';
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
       component: Home
     },
@@ -16,6 +21,12 @@ export default new Router({
       path: '/about',
       name: 'about',
       component: About
+    },
+    {
+      path: '/',
+      name: 'root',
+      component: Deck,
+      props: { cardList: testCardList }
     }
   ]
 });
