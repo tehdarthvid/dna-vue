@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div id="version">{{versionString}}</div>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -7,6 +8,22 @@
     <router-view/>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'app',
+  created() {
+    console.log(this.versionString);
+  },
+  computed: {
+    versionString() {
+      return `${'development' === process.env.NODE_ENV ? 'dev' : ''} v${
+        process.env.PKG_VERSION
+      } b${process.env.GIT_COMMIT_NUMBER}`;
+    }
+  }
+};
+</script>
 
 <style lang="scss">
 #app {
@@ -25,5 +42,16 @@
       color: #42b983;
     }
   }
+}
+
+body {
+}
+
+#version {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  text-align: right;
 }
 </style>
