@@ -1,6 +1,8 @@
+import { dlog } from '@/utils';
+
 export default {
   setActiveCard(state, card) {
-    console.log(`mutation setActiveCard ${card.title}`);
+    dlog(`mutation setActiveCard ${card.title}`);
     state.activeCard = card;
   }
 };

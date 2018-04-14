@@ -1,6 +1,8 @@
+import { dlog } from '@/utils';
+
 export default {
   setActiveCard({ commit }, card) {
-    console.log(`action setActiveCard ${card.title}`);
+    dlog(`action setActiveCard ${card.title}`);
     commit('setActiveCard', card);
   }
 };

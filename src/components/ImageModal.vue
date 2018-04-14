@@ -14,6 +14,8 @@
 // in full builds helpers are exposed as Vuex.mapState
 import { mapState, mapActions } from 'vuex';
 
+import { dlog } from '@/utils';
+
 import LazyImg from '@/components/LazyImg';
 const isWindowFit = true;
 const modalRaito = 0.9;
@@ -77,7 +79,7 @@ export default {
             height = Math.floor(naturalHeight * width / naturalWidth);
           }
 
-          console.log(`new size (${width}, ${height})`);
+          dlog(`new size (${width}, ${height})`);
         }
         width *= modalRaito;
         height *= modalRaito;
@@ -104,8 +106,8 @@ export default {
         naturalWidth: img.naturalWidth,
         naturalHeight: img.naturalHeight
       };
-      console.log(
-        `ImgModal ${this.src} (${this.dimentions.naturalWidth}, ${
+      dlog(
+        `ImgModal ${this.activeCard} (${this.dimentions.naturalWidth}, ${
           this.dimentions.naturalHeight
         }) loaded`
       );
@@ -115,7 +117,7 @@ export default {
       this.setActiveCard({});
     },
     handleKeyDown(event) {
-      if (event.keyCode === 27) {
+      if (27 === event.keyCode) {
         //this.props.setActiveCard(``);
         this.setActiveCard({});
       }

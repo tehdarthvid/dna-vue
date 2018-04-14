@@ -19,6 +19,7 @@
 </template>
 
 <script>
+import { dlog } from '@/utils';
 import { mapActions } from 'vuex';
 
 export default {
@@ -85,7 +86,7 @@ export default {
         title = this.$slots.header[0].elm.innerHTML;
         date = this.$slots.content[0].elm.innerHTML;
       }
-      console.log(`${title} dblclick ${e.pageX}, ${e.pageY}`);
+      dlog(`${title} dblclick ${e.pageX}, ${e.pageY}`);
       this.setActiveCard({ title, bgImageURL, date });
     },
     handleMouseMove(e) {

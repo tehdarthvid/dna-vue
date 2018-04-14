@@ -13,10 +13,12 @@
 </template>
 
 <script>
+import { log } from '@/utils';
+
 export default {
   name: 'app',
   created() {
-    console.log(this.versionString);
+    log(this.versionString);
   },
   computed: {
     versionString() {

@@ -7,9 +7,9 @@
   "rules": {
     "yoda": [2, "always"],
     "comma-dangle": ["warn", "never"],
-    "no-console": "off",
     "no-unused-vars": "warn",
     "import/extensions": ["warn", "never"],
-    "import/first": "off"
+    "import/first": "off",
+    "import/newline-after-import": "off"
   }
 }
