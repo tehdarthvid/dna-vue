@@ -14,7 +14,7 @@
     <div id="content">
       <router-view/>
     </div>
-    <p>[currently using Vue.js (3.x beta) / Vuex]</p>
+    <p>[ vue-cli 3.x beta ]</p>
   </div>
 </template>
 
