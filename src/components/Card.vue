@@ -35,6 +35,8 @@ export default {
   },
   props: ['dataImage'],
   // http://exploringjs.com/es6/ch_arrow-functions.html#sec_arrow-function-syntax
+  // When there's only one statement, you can drop the {} and the return
+  // x => y is equivalent to x => { return y; }
   // function (x) { return x * x }; x => x * x;
   // Ergo, this version of data actually has a "return".
   data: () => ({
@@ -90,9 +92,7 @@ export default {
       this.setActiveCard({ title, bgImageURL, date });
     },
     handleMouseMove(e) {
-      let cardName = this.$slots.header
-        ? this.$slots.header[0].elm.innerHTML
-        : 'none';
+      //let cardName = this.$slots.header ? this.$slots.header[0].elm.innerHTML : 'none';
       //console.log(`${cardName} mousemove ${e.pageX}, ${e.pageY}`);
 
       this.mouseX = e.pageX - this.$refs.card.offsetLeft - this.width / 2;

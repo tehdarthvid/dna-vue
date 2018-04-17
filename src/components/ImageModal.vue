@@ -112,7 +112,7 @@ export default {
         }) loaded`
       );
     },
-    handleClick(e) {
+    handleClick() {
       //console.log(`${title} dblclick ${e.pageX}, ${e.pageY}`);
       this.setActiveCard({});
     },

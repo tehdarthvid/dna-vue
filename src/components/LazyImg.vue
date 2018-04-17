@@ -5,7 +5,7 @@
 </template>
 
 <script>
-const isWindowFit = true;
+//const isWindowFit = true;
 
 export default {
   name: 'LazyImg',
