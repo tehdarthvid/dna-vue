@@ -189,6 +189,12 @@ const testCardList = [
     bgImageURL:
       'https://i2.wp.com/www.rantingdragon.com/anticipation/books2014/big/05.jpg',
     date: '4 Aug 2015'
+  },
+  {
+    title: 'ES2015',
+    bgImageURL:
+      'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
+    date: '17 Jun 2015'
   }
 ];
 

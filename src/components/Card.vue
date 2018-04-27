@@ -116,6 +116,7 @@ export default {
 <style scoped lang="scss">
 $hoverEasing: cubic-bezier(0.23, 1, 0.32, 1);
 $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
 $card-width: 240px;
 $card-height: 320px;
 
@@ -151,7 +152,9 @@ $card-height: 320px;
     }
     .card-bg {
       // Sped up hover easing
-      transition: 0.6s $hoverEasing, opacity 1s $hoverEasing;
+      //transition: 0.6s $hoverEasing, opacity 1s $hoverEasing;
+      transition: 0.6s $hoverEasing, opacity 1s $returnEasing;
+      //transition: 1s $returnEasing, opacity 2s 1s $returnEasing;
       // Increased opacity from of 0.8
       opacity: 0.9;
     }
@@ -171,7 +174,8 @@ $card-height: 320px;
   height: 100%;
   background-color: #333;
   overflow: hidden;
-  border-radius: 10px;
+  //border-radius: 10px;
+  border-radius: 5px;
   box-shadow: rgba(black, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px,
     inset rgba(white, 0.5) 0 0 0 6px;
   transition: 1s $returnEasing;
@@ -197,7 +201,7 @@ $card-height: 320px;
 
 .card-bg__fade-in {
   opacity: 0.5;
-  transition: opacity 1500ms;
+  //transition: opacity 1500ms;
 }
 
 .card-info {

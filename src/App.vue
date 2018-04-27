@@ -50,7 +50,8 @@ body {
   font-family: 'Raleway';
   font-size: 14px;
   font-weight: 500;
-  background-color: #bcaaa4;
+  //background-color: #bcaaa4;
+  background-color: #888888;
   -webkit-font-smoothing: antialiased;
 }
 
