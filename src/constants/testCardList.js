@@ -13,9 +13,22 @@ const testCardList = [
     date: '3 Oct 1982 – 26 Jun 1983'
   },
   {
+    title: 'The A-Team',
+    bgImageURL:
+      //'https://s3-ap-northeast-1.amazonaws.com/sk2q169cx9pfoawet3et/ditim/1983.01.23 The_A-Team_-_1024px_-_Poster.png',
+      'https://mindreels.files.wordpress.com/2015/09/the-a-team.jpg',
+    date: '23 Jan 1983'
+  },
+  {
     title: 'Super Mario Bros.',
     bgImageURL: 'http://www.retrogames.cz/games/005/NES_00.gif',
     date: '13 Sep 1985'
+  },
+  {
+    title: 'MacGyver',
+    bgImageURL:
+      'https://s3-ap-northeast-1.amazonaws.com/sk2q169cx9pfoawet3et/ditim/1985.09.29 x5VgIHG.jpg',
+    date: '29 Sep 1985'
   },
   {
     title: 'The Uncanny X-Men',
@@ -32,16 +45,31 @@ const testCardList = [
     date: '24 Sep 1991'
   },
   {
+    title: 'Batman: The Animated Series',
+    bgImageURL:
+      'https://vignette1.wikia.nocookie.net/batman/images/2/24/BTASposter.png',
+    date: '5 Sep 1992 – 15 Sep 1995'
+  },
+  {
+    title: 'Magic: The Gathering',
+    bgImageURL: 'https://deckmaster.info/images/cards/1E/-938-hr.jpg',
+    date: '5 Aug 1993'
+  },
+  {
     title: 'Super Street Fighter II X: Grand Master Challenge',
     bgImageURL:
       'https://steamuserimages-a.akamaihd.net/ugc/543003889249989774/5AAD2D518617DBB02B61EACECFEDC2BF336C9F6E/',
     date: '23 Feb 1994'
   },
+  //{ title: 'ドラゴンボールZ',
+  //bgImageURL	: "https://vignette.wikia.nocookie.net/dragonball/images/3/37/TheZFighters03.png/revision/latest/scale-to-width-down/1000?cb=20150621010223",
+  //bgImageURL: 'https://i.ytimg.com/vi/ISBe8FcWCXI/maxresdefault.jpg',
+  //date: '26 Apr 1989 – 31 Jan 1996'},
   {
-    title: 'ドラゴンボールZ',
-    //bgImageURL	: "https://vignette.wikia.nocookie.net/dragonball/images/3/37/TheZFighters03.png/revision/latest/scale-to-width-down/1000?cb=20150621010223",
-    bgImageURL: 'https://i.ytimg.com/vi/ISBe8FcWCXI/maxresdefault.jpg',
-    date: '26 Apr 1989 – 31 Jan 1996'
+    title: 'ドラゴンボール',
+    bgImageURL:
+      'https://c1.staticflickr.com/5/4137/4900198959_57c838229e_b.jpg',
+    date: '5 May 1984 – 23 May 1995'
   },
   {
     title: 'らんま 1/2',
@@ -49,12 +77,7 @@ const testCardList = [
       'https://s3-ap-northeast-1.amazonaws.com/sk2q169cx9pfoawet3et/ditim/1987.09+%E3%80%8C%E3%82%89%E3%82%93%E3%81%BE+1_2%E3%80%8D+%E9%80%B1%E5%88%8A%E5%B0%91%E5%B9%B4%E3%82%B5%E3%83%B3%E3%83%87%E3%83%BC+36+9478482851_04bd05ff94_b.jpg',
     date: 'Sep 1987 – Mar 1996'
   },
-  {
-    title: 'Batman: The Animated Series',
-    bgImageURL:
-      'https://vignette1.wikia.nocookie.net/batman/images/2/24/BTASposter.png',
-    date: '5 Sep 1992 – 15 Sep 1995'
-  },
+  // college
   {
     title: '新世紀 エヴァンゲリオン',
     bgImageURL:
@@ -64,7 +87,12 @@ const testCardList = [
     //bgImageURL: "https://wallup.net/wp-content/uploads/2016/05/14/24082-Neon_Genesis_Evangelion-Ayanami_Rei-Ikari_Shinji-Asuka_Langley_Soryu-EVA_Unit_02-anime-Gendo_Ikari-EVA_Unit_00-EVA_Unit_01-748x1068.jpg",
     date: '4 Oct 1995 – 27 Mar 1996'
   },
-  // college
+  {
+    title: 'Tao of Jeet Kune Do',
+    bgImageURL:
+      'https://upload.wikimedia.org/wikipedia/commons/7/71/TAO_OF_JEET_KUNE_DO.jpg',
+    date: '1975'
+  },
   {
     title: '悪魔城 ドラキュラＸ 月下の夜想曲',
     bgImageURL:
