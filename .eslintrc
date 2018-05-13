@@ -10,6 +10,7 @@
     "no-unused-vars": "warn",
     "import/extensions": ["warn", "never"],
     "import/first": "off",
-    "import/newline-after-import": "off"
+    "import/newline-after-import": "off",
+    "no-console": ["warn"]
   }
 }
