@@ -8,7 +8,9 @@
       </a>
     </div>
     <div id="title">
-      <h1>darthvid's influences DNA</h1>
+      <h1><a 
+        href='https://twitter.com/darthvid' 
+        target="_blank">darthvid</a>'s influences DNA</h1>
       <p>[also the target for webdev study]</p>
     </div>
     <div id="content">
@@ -43,6 +45,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+
+  a {
+    color: #202d3a;
+    text-decoration: inherit; /* no underline */
+  }
 }
 
 body {
