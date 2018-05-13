@@ -21,6 +21,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
 import { log } from '@/utils';
 
 export default {
@@ -28,12 +29,19 @@ export default {
   created() {
     log(this.versionString);
   },
+  mounted() {
+    this.initStore();
+  },
   computed: {
     versionString() {
       return `${'development' === process.env.NODE_ENV ? 'dev' : ''} v${
         process.env.PKG_VERSION
       } b${process.env.GIT_COMMIT_NUMBER}`;
     }
+  },
+  methods: {
+    // Map store actions.
+    ...mapActions(['initStore'])
   }
 };
 </script>

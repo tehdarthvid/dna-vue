@@ -2,7 +2,7 @@
   <div>
     <image-modal/>
     <div class="container">
-      <card v-for="card in cardList" :key="card.title" :data-image="card.bgImageURL">
+      <card v-for="card in activeDeck" :key="card.title" :data-image="card.bgImageURL">
         <h1 slot="header">{{card.title}}</h1>
         <p slot="content">{{card.date}}</p>
       </card>
@@ -14,11 +14,14 @@
 import Card from '@/components/Card';
 import ImageModal from '@/components/ImageModal';
 
+import { mapState } from 'vuex';
+
 export default {
   name: 'Deck',
   components: { Card, ImageModal },
-  props: {
-    cardList: { type: Array, default: () => [] }
+  //props: {cardList: { type: Array, default: () => [] }},
+  computed: {
+    ...mapState(['activeDeck'])
   }
 };
 </script>

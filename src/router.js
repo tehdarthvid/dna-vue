@@ -6,7 +6,7 @@ import About from './views/About';
 
 import Deck from '@/views/Deck';
 
-import testCardList from '@/constants/testCardList';
+//import testCardList from '@/constants/testCardList';
 
 Vue.use(Router);
 
@@ -25,8 +25,8 @@ export default new Router({
     {
       path: '/',
       name: 'root',
-      component: Deck,
-      props: { cardList: testCardList }
+      component: Deck
+      //props: { cardList: testCardList }
     }
   ]
 });
