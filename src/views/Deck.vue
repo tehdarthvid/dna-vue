@@ -1,7 +1,10 @@
 <template>
   <div>
     <image-modal/>
-    <div class="container">
+    <div v-if="null === activeDeck">
+      loading...
+    </div>
+    <div v-else class="container">
       <card v-for="card in activeDeck" :key="card.title" :data-image="card.bgImageURL">
         <h1 slot="header">{{card.title}}</h1>
         <p slot="content">{{card.date}}</p>

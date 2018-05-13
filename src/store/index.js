@@ -7,7 +7,7 @@ import actions from './actions';
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: { activeCard: {}, activeDeck: [] },
+  state: { activeCard: {}, activeDeck: null },
   mutations,
   actions
 });
