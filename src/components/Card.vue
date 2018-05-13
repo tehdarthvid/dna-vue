@@ -33,6 +33,9 @@ export default {
     //console.log(this.$slots);
     //console.log(this.$slots.header[0].elm.innerHTML);
   },
+  beforeDestroy() {
+    clearTimeout(this.mouseLeaveDelay);
+  },
   props: ['dataImage'],
   // http://exploringjs.com/es6/ch_arrow-functions.html#sec_arrow-function-syntax
   // When there's only one statement, you can drop the {} and the return
