@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import { dlog } from '@/utils';
 //const isWindowFit = true;
 
 export default {
@@ -13,7 +14,7 @@ export default {
     src: { type: String, default: `` }
   },
   data() {
-    console.log(this.src);
+    dlog(this.src);
     return {
       hasImgLoaded: false
     };
